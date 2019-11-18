@@ -1,10 +1,10 @@
 import React from 'react';
 import './style.css';
 import Badge from './img/ryan-logo.png';
-import Home from './components/Home.js'
+import Contact from './components/Contact.js'
 import Projects from './components/Projects.js';
-import About from './components/About.js'
-import Aster from './components/Aster.js'
+import Home from './components/Home.js'
+import Roids from './components/Roids.js'
 import YouTube from './components/youtube.js'
 
 class App extends React.Component {
@@ -12,22 +12,22 @@ class App extends React.Component {
     display: 'home'
   };
 
+  clickContact = () => {
+    if (this.state.display === 'contact'){ 
+      return null
+    } else {
+      this.setState({
+        display: 'contact'
+      })
+    }
+  }
+
   clickHome = () => {
     if (this.state.display === 'home'){ 
       return null
     } else {
       this.setState({
         display: 'home'
-      })
-    }
-  }
-
-  clickAbout = () => {
-    if (this.state.display === 'about'){ 
-      return null
-    } else {
-      this.setState({
-        display: 'about'
       })
     }
   }
@@ -60,9 +60,11 @@ class App extends React.Component {
                   </div>
                   <nav>
                       <ul>
+                          
                           <li><a onClick={this.clickHome}>Home</a></li>
-                          <li><a onClick={this.clickAbout}>About</a></li>
                           <li><a onClick={this.clickProjects}>Projects</a></li>
+                          <li><a onClick={this.clickContact}>Contact</a></li>
+                          
                       </ul>
                   </nav>
 
@@ -71,9 +73,9 @@ class App extends React.Component {
       
         <section className="showcase"></section>
         {this.state.display==='home' ? <Home/> : null}
-        {this.state.display==='about' ? <About /> : null}
+        {this.state.display==='contact' ? <Contact /> : null}
         {this.state.display==='projects' ? <Projects setDisplay={this.setDisplay}/> : null}
-        {this.state.display==='asteroids' ? <Aster /> : null}
+        {this.state.display==='asteroids' ? <Roids /> : null}
         {this.state.display==='youtube' ? <YouTube/> : null}
 
       </div>
