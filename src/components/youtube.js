@@ -41,7 +41,7 @@ class YouTube extends React.Component {
         const { selectedVideo, videos } = this.state;
         return(
             <div>
-                <section className="aboutme">
+                <section className="body-section-1">
                     <section className="tagline">
                         <h2>YouTube Player</h2>
                     </section>
@@ -51,7 +51,7 @@ class YouTube extends React.Component {
                         </h3>
                     </section>
                 </section>
-                <section className="contactme">
+                <section className="body-section-2">
                     <div className="youtube-player">
                         <div>
                             <div>

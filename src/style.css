@@ -1,17 +1,18 @@
-body {
-    font-family: monospace;
-    /* font-size: 16px; */
-    color: #ffffff;
-    padding: 0;
-    /* margin: 0; */
-    /* line-height: 15px; */
-    background-color: #2f2f2f
+.background {
+    background:url('./img/florida.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.spacer{
+    height: 200px;
 }
 
-/* line-height: the amount of space between each line */
-
-/* when referencing a class, you will say .<classname> */
-/* when referencing an id, you will say #<id> */
+body {
+    font-family: monospace;
+    color: #ffffff;
+    margin: 0;
+    background-color: #2f2f2f;
+}
 
 .container {
     width:  75%;
@@ -21,16 +22,15 @@ body {
 
 header {
     background-color: #9b958b;
-    /* color: #ffffff; */
-    padding: 0px;
-    padding-top: 0px;
-    min-height: 80px;
     color: #000000;
-    border: #000000 5px solid;
-    /* border-top, border-bottom, border-left, border-right... */
-    /* border-right: #000000 50px solid; */
-    max-width: 1920px;
+    border-top: #000000 5px solid;
+    border-bottom: #000000 5px solid;
     margin: auto;
+    position: fixed;
+    /* top: 0px; */
+    width: 100vw;
+    z-index: 1000;
+    
 }
 
 header a {
@@ -43,15 +43,9 @@ header a {
 header a:hover {
     color:#131f27;
     font-weight: bold;
+    cursor: pointer;
 }
 
-header nav {
-    /* margin: 10px; */
-    /* padding-top: 10px; */
-
-}
-
-/* by default ul's have margins and padding */
 header ul {
     margin: 0;
     padding: 0;
@@ -59,73 +53,77 @@ header ul {
 }
 
 header li {
-
     display:inline;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 header nav {
     padding-top:10px;
     float: right;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
-.my-picture {
-
+header .my-picture {
     float: left;
     padding-left:10px;
-    /* border-radius: 50%; */
+    padding-top:5px;
 }
 
-.my-picture img {
+header .my-picture img {
     width: 75px;
     border-radius: 40%;
     border: 3px solid;
     border-color: black;
-    
-    
 }
 
-.name-plate {
+header .name-plate {
     float: left;
     width: 50%;
     padding-top: 10px;
-    /* font-size: 18px; */
-    /* margin: 0px;
-    padding: 0px; */
 }
 
-.showcase {
-    min-height: 270px;
-    max-width: 1920px;
-    background:url('./img/florida.jpg') -400px -850px;
-    background-size: 2400px;
-    margin: auto;
-    background-color: #000000;
-    border: 5px solid;
-    border-top: 0px;
-    border-color: #000000;
-}
-
-.aboutme {
+.body-section-1 {
     background-color: #121212;
-    border-top: 10px solid;
+    border-top: 5px solid;
     border-bottom: 5px solid;
     border-left: 5px solid;
     border-right: 5px solid;
     border-color: black;
-    padding: 10px;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-top: 30px;
+    padding-bottom: 50px;
 
+}
+
+.body-section-2 {
+    border: 15px solid;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 75%;
+    border-color: black;
+    padding: 0px;
+    text-align: center;
+    background-color: #47423b;
 }
 
 .infoblurb {
     max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    font-size: 19px;
 }
 
 .tagline {
     margin: auto;
     text-align: center;
+    font-size: 24px;
+    font-weight: bold;
     /* font-size: 24px; */
     
 }
@@ -147,9 +145,7 @@ header nav {
     will-change: transform;
     
 }
-/* .swipe-buttons {
-    margin: auto;
-} */
+
 .move {
     display: inline;
     background-color: rgba(0, 0, 0, .8);
@@ -158,9 +154,6 @@ header nav {
     border-color: white;
     width: 10%;
 }
-
-
-
 
 .swiper img {
     object-fit: contain;
@@ -173,27 +166,17 @@ header nav {
     border-color: black;
 }
 
-.infoblurb {
-
-    margin: auto;
-    text-align: center;
-}
-
-.contactme {
-    border: 5px solid;
-    border-color: black;
-    padding: 10px;
-    text-align: center;
-}
 
 
-.contactme input[type="email"]{
+
+
+.body-section-2 input[type="email"]{
     padding: 4px;
     height: 25px;
     width: 250px;
 }
 
-.contactme .button_1 {
+.body-section-2 .button_1 {
     height: 38px;
     background: #111111;
     border: 3px solid;
@@ -226,7 +209,7 @@ header nav {
 }
 
 
-
+/* youtube player stuff */
 .videoframe {
     position: relative;
     overflow: hidden;
@@ -272,6 +255,10 @@ header nav {
         width: 100%;
         padding-top: 0px;
     }
+    .my-picture{
+        padding-top: 10px;
+    }
+    
     header nav {
         padding-bottom: 5px;
     }

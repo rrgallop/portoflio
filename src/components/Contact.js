@@ -21,7 +21,7 @@ class Home extends React.Component {
     render(){
         return(
             <div>
-            <section className="aboutme">
+            <section className="body-section-1">
                 <section className="tagline">
                     <h2>Professional Software Engineer</h2>
                 </section>
@@ -32,7 +32,7 @@ class Home extends React.Component {
                     </h3>
                 </section>
             </section>
-                <section className="contactme">
+                <section className="body-section-2">
                     <div className="container">
                         <h4>If you like what you see and would like to get in contact,<br/>
                             just enter your email address below.<br/>

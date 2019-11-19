@@ -19,18 +19,27 @@ class Projects extends React.Component {
     render(){
         return(
             <div>
-                <section class="aboutme">
+                <section class="body-section-1">
                     <section className="tagline">
                         <h2>My Work</h2>
                     </section>
                     <section className="infoblurb">
-                        <h3>Click below on any of the links to get 
-                        more information about and/or interact with 
-                        projects I have done.
-                        </h3>
+                        <h3>I believe that the best way to learn is to get your hands dirty.</h3>
+                        <br/><br/>
+                        Here I would like to showcase a few different projects I have done.<br/>
+                        The goal is to expose myself to many different techniques and technologies.<br/>
+                        <br/>
+                        Expand a project to learn more, view sourcecode,<br/>
+                        and interact with the project.
+
+                        Everything here can be considered a work in progress.<br/>
+                        Even if I'm satisfied with the current state of a project,<br/>
+                        I may come back to it later to expand features,<br/>
+                        so check back if you want to see the current state of my work.
+                        
                     </section>
                 </section>
-                <section className="contactme">
+                <section className="body-section-2">
                     <section className="boxes">
                         <div className="box-container">
                             <div className="box">

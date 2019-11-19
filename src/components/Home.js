@@ -107,9 +107,11 @@ class About extends React.Component {
         const maxMovement = maxLength * this.IMG_WIDTH;
         return(
             <div>
-                <section class="aboutme">
-                    <section class="tagline">
-                        <h2>Hi, my name is Ryan.<br/>Thanks for stopping by.</h2>
+                <section className="body-section-1">
+                    <section className="tagline">
+                        Hi, my name is Ryan.<br/>Thanks for stopping by.<br/><br/>
+                    
+                    {/* Swiper handling code to be ported to component */}
                         <div className="swiper-container"
                             style={{
                                 width: this.IMG_WIDTH-1,
@@ -151,47 +153,50 @@ class About extends React.Component {
                                 →
                             </button>
                         </div>
-                            <br/><br/>
-                        
                     </section>
+                    {/* Swiper handling code to be ported to component */}
+                    <br/><br/>
+                </section>
+
+                <section className="body-section-1">
                     <section className="infoblurb">
-                        <h2>Technology is my passion and has been since I was very young.<br/> 
-                        I have experience with many programming languages and technologies. 
-                        My top 3 favorite languages are probably Python, JavaScript and C. 
-                        I earned my degree in Computer Science from the University of 
-                        Southern Maine in 2019. I was born and raised in Maine. 
-                        I've traveled all over the country, 
-                        and lived in places like San Francisco CA and Atlanta GA.
-                        <br/><br/>
-                        I'm a total nerd, and spend most of my time in front of a computer 
-                        learning new skills and playing with technologies.<br/><br/>
-                        A non-exhaustive list of technologies I know are:<br/>
+                    <h3>I'm a total nerd, and spend most of my time in front of a computer 
+                    learning new skills and playing with technologies.</h3><br/>
+                    A non-exhaustive list of technologies I know are:<br/>
+                
+                    Java<br/>
+                    C/C++<br/>
+                    Python<br/>
+                    C#<br/>
+                    JavaScript<br/>
+                    TypeScript<br/>
+                    HTML/CSS<br/>
+                    React<br/>
+                    Angular<br/>
+                    NodeJS<br/>
+                    <br/>
+                    Technology is my passion and has been since I was very young.<br/><br/> 
                         
-                            Java<br/>
-                            C/C++<br/>
-                            Python<br/>
-                            C#<br/>
-                            JavaScript<br/>
-                            TypeScript<br/>
-                            HTML/CSS<br/>
-                            React<br/>
-                            Angular<br/>
-                            NodeJS<br/>
-                        
-                        <br/><br/>
-                        I love the outdoors and I love pushing my limits. I have hiked over 2,000 miles of the Appalachian Trail. 
+                    My top 3 favorite languages are probably Python, JavaScript and C. 
+                    I earned my degree in Computer Science from the University of 
+                    Southern Maine in 2019. I was born and raised in Maine. 
+                    I've traveled all over the country, 
+                    and lived in places like San Francisco CA and Atlanta GA.
+                    </section>
+                </section>
+                
+                <section className="body-section-1">
+                    <section className="infoblurb">
+                        <h3>I love the outdoors and I love pushing my limits.</h3>
+                        <br/>
+                        I have hiked over 2,000 miles of the Appalachian Trail. 
                         I've been an endurance athlete for much of my life, and I've completed local 
                         marathon and half-marathon races for fun. I've also been a 
                         musician for many years. I play bass in a band with my friends. I also love 
                         to play guitar and sing for people. 
-                        </h2>
                     </section>
                 </section>
-                <section className="contactme">
-                    <div className="container">
-                        
-                    </div>
-                </section>
+                <section className="body-section-2"></section>
             </div>
         );
     }
