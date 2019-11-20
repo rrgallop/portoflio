@@ -8,7 +8,7 @@ const VideoList = (props) => {
     const listOfVideos = props.videos.map((video, id) => <VideoItem onVideoSelect={ props.onVideoSelect }key={id} video={video} />)
     if (listOfVideos.length === 0) return <div></div>
     return (
-        <div>
+        <div className="video-list-container">
             <h3>Related videos:</h3><br/>
             {listOfVideos}
         </div>

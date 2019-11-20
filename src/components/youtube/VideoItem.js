@@ -6,8 +6,8 @@ import { Grid, Paper, Typography } from '@material-ui/core';
 const VideoItem = ({ video, onVideoSelect }) => {
     return (
         <div>
-            <div onClick={ () =>  onVideoSelect(video) }>
-                <img style={{ marginRight: '20px' }} alt="thumbnail" src={video.snippet.thumbnails.medium.url}/>
+            <div className="yt-thumbs" onClick={ () =>  onVideoSelect(video) }>
+                <img alt="thumbnail" src={video.snippet.thumbnails.medium.url}/>
                 <div><b>{video.snippet.title}</b></div>
             </div>
         </div>

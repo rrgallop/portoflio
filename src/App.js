@@ -91,10 +91,12 @@ class App extends React.Component {
           </header>
           <br/><br/><br/><br/><br/>
           <div id="aboutme">{this.state.home ? <Home  /> : null}</div>
+          <div className="seperator"></div>
           <div id="myprojects">{this.state.projects ? <Projects setDisplay={this.setDisplay}/> : null}</div>
           {this.state.display==="asteroids" ? <Roids /> : null}
           {this.state.display==="youtube" ? <YouTube/> : null}
           {this.state.display==="calculator" ? <Calculator/> : null}
+          <div className="seperator"></div>
           <div id="contactme">{this.state.contact ? <Contact /> : null}</div>
           
         </div>

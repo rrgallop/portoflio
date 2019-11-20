@@ -4,6 +4,10 @@ import html from "../img/logo_html.png";
 import css from "../img/logo_css.png";
 import yt from "../img/youtube.png";
 import calc from "../img/calc.png";
+// import DelayLink from 'react-router-dom'; 
+import DelayLink from './DelayLink.jsx'
+import { Link } from 'react-scroll'
+
 
 class Projects extends React.Component {
     
@@ -46,27 +50,26 @@ class Projects extends React.Component {
                     </section>
                 </section>
                 <section className="body-section-2">
-                    <section className="boxes">
-                        <div className="box-container">
-                            <div className="box">
-                                <button className="project-button" onClick={this.clickedRoids}><img src={html} alt="html"/>
-                                <h4>Asteroids</h4></button>
-                                <p>A JavaScript diversion if you want to kill some time.</p>
-                            </div>
-                            <div className="box">
-                                <button className="project-button" onClick={this.clickedCalc}>
-                                    <img src={calc} alt="calculator"/>
-                                    <h4>Angular Calculator</h4>
-                                </button>
-                                <p>Calculator built using Angular</p>
-                            </div>
-                            <div className="box">
-                                <button className="project-button" onClick={this.clickedYouTube}><img src={yt} alt="youtube"/>
-                                <h4>YouTube Video Player</h4></button>
-                                <p>YouTube Video Player built using React & YouTube API</p>
-                            </div>
+                    
+                    <div className="project-container">
+                        <div className="project-box">
+                            <button className="project-button" onClick={this.clickedRoids}><img src={html} alt="html"/>
+                            <h4>Asteroids</h4></button>
+                            <p>A JavaScript diversion if you want to kill some time.</p>
                         </div>
-                    </section>
+                        <div className="project-box">
+                            <button className="project-button" onClick={this.clickedCalc}>
+                                <img src={calc} alt="calculator"/>
+                                <h4>Angular Calculator</h4>
+                            </button>
+                            <p>Calculator built using Angular</p>
+                        </div>
+                        <div className="project-box">
+                            <button className="project-button" onClick={this.clickedYouTube}><img src={yt} alt="youtube"/>
+                            <h4>YouTube Video Player</h4></button>
+                            <p>YouTube Video Player built using React & YouTube API</p>
+                        </div>
+                    </div>
                 </section>
                 
                 

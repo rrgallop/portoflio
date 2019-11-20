@@ -31,7 +31,7 @@ class Home extends React.Component {
                             steps={[
                                 'Software Engineer', 1000,
                                 'Software Developer', 1000,
-                                'Creative Problem Solver', 1000,
+                                'Creative', 1000,
                                 'Tech Enthusiast', 1000,
                                 'Long-distance Hiker', 1000,
                                 'Total Nerd', 1000,

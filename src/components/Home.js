@@ -196,7 +196,6 @@ class About extends React.Component {
                         to play guitar and sing for people. 
                     </section>
                 </section>
-                <section className="body-section-2"></section>
             </div>
         );
     }
