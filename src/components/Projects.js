@@ -1,8 +1,9 @@
 import React from 'react';
 import '../style.css';
 import html from "../img/logo_html.png";
-import css from "../img/logo_css.png"
-import yt from "../img/youtube.png"
+import css from "../img/logo_css.png";
+import yt from "../img/youtube.png";
+import calc from "../img/calc.png";
 
 class Projects extends React.Component {
     
@@ -14,6 +15,11 @@ class Projects extends React.Component {
     clickedYouTube = () => {
         const { setDisplay } = this.props;
         setDisplay('youtube');
+    }
+
+    clickedCalc = () => {
+        const { setDisplay } = this.props;
+        setDisplay('calculator');
     }
     
     render(){
@@ -43,17 +49,19 @@ class Projects extends React.Component {
                     <section className="boxes">
                         <div className="box-container">
                             <div className="box">
-                                <button onClick={this.clickedRoids}><img src={html} alt="html"/>
+                                <button className="project-button" onClick={this.clickedRoids}><img src={html} alt="html"/>
                                 <h4>Asteroids</h4></button>
                                 <p>A JavaScript diversion if you want to kill some time.</p>
                             </div>
                             <div className="box">
-                                <img src={css} alt="css"/>
-                                <h4>Some stuff</h4>
-                                <p>Placeholder</p>
+                                <button className="project-button" onClick={this.clickedCalc}>
+                                    <img src={calc} alt="calculator"/>
+                                    <h4>Angular Calculator</h4>
+                                </button>
+                                <p>Calculator built using Angular</p>
                             </div>
                             <div className="box">
-                                <button onClick={this.clickedYouTube}><img src={yt} alt="youtube"/>
+                                <button className="project-button" onClick={this.clickedYouTube}><img src={yt} alt="youtube"/>
                                 <h4>YouTube Video Player</h4></button>
                                 <p>YouTube Video Player built using React & YouTube API</p>
                             </div>

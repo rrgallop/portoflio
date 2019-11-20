@@ -6,6 +6,7 @@ import Projects from './components/Projects.js';
 import Home from './components/Home.js'
 import Roids from './components/Roids.js'
 import YouTube from './components/youtube.js'
+import Calculator from './components/Calculate.js'
 import florida from './img/florida.jpg'
 import { Link } from 'react-scroll'; 
 
@@ -93,6 +94,7 @@ class App extends React.Component {
           <div id="myprojects">{this.state.projects ? <Projects setDisplay={this.setDisplay}/> : null}</div>
           {this.state.display==="asteroids" ? <Roids /> : null}
           {this.state.display==="youtube" ? <YouTube/> : null}
+          {this.state.display==="calculator" ? <Calculator/> : null}
           <div id="contactme">{this.state.contact ? <Contact /> : null}</div>
           
         </div>

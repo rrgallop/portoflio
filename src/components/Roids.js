@@ -5,9 +5,10 @@ import Projects from './Projects.js';
 class Roids extends React.Component {
     render(){
         return(
-            <div>
-                <a href="https://rrgallop.github.io/asteroids.html" target="_blank">Launch Asteroids</a>
-                <iframe src="https://rrgallop.github.io/asteroids.html" height="520" width="720"/>
+            <div className="body-section-1">
+                <div className="container">
+                    <iframe align="middle" className="asteroids" src="https://rrgallop.github.io/asteroids.html" height="520" width="720"/>
+                </div>
             </div>
         )
     }

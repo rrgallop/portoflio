@@ -162,7 +162,7 @@ class About extends React.Component {
                     <section className="infoblurb">
                     <h3>I'm a total nerd, and spend most of my time in front of a computer 
                     learning new skills and playing with technologies.</h3><br/>
-                    A non-exhaustive list of technologies I know are:<br/>
+                    Some of the languages/technologies I know are:<br/>
                 
                     Java<br/>
                     C/C++<br/>

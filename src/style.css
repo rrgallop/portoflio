@@ -168,12 +168,20 @@ header .name-plate {
 
 
 
+form {
+    display: inline-flexbox;
+}
 
-
-.body-section-2 input[type="email"]{
+.contact-me-1 {
     padding: 4px;
     height: 25px;
     width: 250px;
+}
+
+.contact-me-2 {
+    padding: 4px;
+    height: 25vh;
+    width: 40vw;
 }
 
 .body-section-2 .button_1 {
@@ -185,6 +193,10 @@ header .name-plate {
     padding-left: 20px;
     padding-right: 20px;
 
+}
+
+.goodbye {
+    font-size: 30px;
 }
 
 .boxes .box-container {
@@ -244,7 +256,10 @@ header .name-plate {
 
 }
 
+iframe .asteroids {
+    margin: auto;
 
+}
 
 /* rules for small devices */
 @media(max-width: 800px){
@@ -258,9 +273,14 @@ header .name-plate {
     .my-picture{
         padding-top: 10px;
     }
+    header .container {
+        padding: 0px;
+        margin: 0px;
+    }
     
     header nav {
         padding-bottom: 5px;
+        margin-top: 10px;
     }
     .boxes .box-container {
         width: 100%;
@@ -283,6 +303,23 @@ header .name-plate {
 @media(max-width: 500px){
     .my-picture {
         display: none;
+    }
+
+    .body-section-1{
+      width: 100%;
+    }
+    
+    header .container {
+        margin: auto;
+    }
+
+    header .name-plate h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    header ul {
+        font-size:12px;
     }
     
 }

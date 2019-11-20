@@ -23,7 +23,7 @@ class SearchBar extends React.Component {
         return(
             <div>
                 <form onSubmit={this.doSubmit}>
-                    <TextField fullWidth label="Search YouTube..." onChange={this.doChange}/>
+                    <TextField fullWidth color="secondary" label="Search YouTube..." onChange={this.doChange}/>
                     <br/><br/>
                 </form>
             </div>
