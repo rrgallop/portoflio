@@ -109,7 +109,8 @@ class About extends React.Component {
             <div>
                 <section className="body-section-1">
                     <section className="tagline">
-                        Hi, my name is Ryan.<br/>Thanks for stopping by.<br/><br/>
+                        <h3>Hi, my name is Ryan.</h3>
+                        <h3>Thanks for stopping by.</h3>
                     
                     {/* Swiper handling code to be ported to component */}
                         <div className="swiper-container"
@@ -121,7 +122,7 @@ class About extends React.Component {
                             onTouchStart={this.handleTouchStart}
                             onTouchMove={this.handleTouchMove}
                             onTouchEnd={this.handleTouchEnd}
-                            onWheel={this.handleWheel}>
+                            >
                             
                             <div className="swiper"
                                 style={{
@@ -160,28 +161,16 @@ class About extends React.Component {
 
                 <section className="body-section-1">
                     <section className="infoblurb">
-                    <h3>I'm a total nerd, and spend most of my time in front of a computer 
-                    learning new skills and playing with technologies.</h3><br/>
-                    Some of the languages/technologies I know are:<br/>
-                
-                    Java<br/>
-                    C/C++<br/>
-                    Python<br/>
-                    C#<br/>
-                    JavaScript<br/>
-                    TypeScript<br/>
-                    HTML/CSS<br/>
-                    React<br/>
-                    Angular<br/>
-                    NodeJS<br/>
-                    <br/>
-                    Technology is my passion and has been since I was very young.<br/><br/> 
-                        
-                    My top 3 favorite languages are probably Python, JavaScript and C. 
-                    I earned my degree in Computer Science from the University of 
-                    Southern Maine in 2019. I was born and raised in Maine. 
-                    I've traveled all over the country, 
-                    and lived in places like San Francisco CA and Atlanta GA.
+                        <h3>I'm a total nerd, and spend most of my time in front of a computer 
+                        learning new skills and playing with technologies.</h3>
+                    
+                        <p>Technology is my passion and has been since I was very young.</p>
+                            
+                        <p>My top 3 favorite languages are probably Python, JavaScript and C. 
+                        I earned my degree in Computer Science from the University of 
+                        Southern Maine in 2019. I was born and raised in Maine.</p>
+                        <p>I've traveled all over the country, 
+                        and lived in places like San Francisco CA and Atlanta GA.</p>
                     </section>
                 </section>
                 

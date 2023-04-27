@@ -35,18 +35,13 @@ class Projects extends React.Component {
                     </section>
                     <section className="infoblurb">
                         <h3>I believe that the best way to learn is to get your hands dirty.</h3>
-                        <br/><br/>
-                        Here I would like to showcase a few different projects I have done.<br/>
-                        The goal is to expose myself to many different techniques and technologies.<br/>
-                        <br/>
-                        Expand a project to learn more, view sourcecode,<br/>
-                        and interact with the project.
-
-                        Everything here can be considered a work in progress.<br/>
-                        Even if I'm satisfied with the current state of a project,<br/>
-                        I may come back to it later to expand features,<br/>
-                        so check back if you want to see the current state of my work.
+                        <p>Here I would like to showcase a few different projects I have done.</p>
+                        <p>The goal is to expose myself to many different techniques and technologies.</p>
                         
+                        <p>Expand a project to learn more, view sourcecode, and interact with the project.</p>
+
+                        Everything here can be considered a work in progress. Even if I'm satisfied with the current state of a project,
+                        I may come back to it later to expand features, so check back if you want to see the current state of my work.
                     </section>
                 </section>
                 <section className="body-section-2">

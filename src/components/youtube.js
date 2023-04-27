@@ -47,7 +47,7 @@ class YouTube extends React.Component {
                     </section>
                     <section className="infoblurb">
                         <h3>Search and watch YouTube videos directly from my homepage. 
-                        Interacts with the YouTube API.
+                        Interacts with the YouTube API. Now, you never have to leave!
                         </h3>
                     </section>
                 </section>

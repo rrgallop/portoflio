@@ -1,6 +1,6 @@
 import React from 'react';
 import '../style.css';
-import Typical from 'react-typical';
+import { TypeAnimation } from 'react-type-animation';
 
 
 class Home extends React.Component {
@@ -25,26 +25,26 @@ class Home extends React.Component {
             <section className="body-section-1">
                 <section className="tagline">
                     <h2>I am a<br/>
-                        <Typical
-                            loop={Infinity}
-                            wrapper="b"
-                            steps={[
-                                'Software Engineer', 1000,
+                        <TypeAnimation
+                            sequence={[
                                 'Software Developer', 1000,
-                                'Creative', 1000,
+                                'Software Engineer', 1000,
+                                'Software Designer', 1000,
+                                'Software Enthusiast', 1000,
                                 'Tech Enthusiast', 1000,
                                 'Long-distance Hiker', 1000,
-                                'Total Nerd', 1000,
-                                'Musician', 1000,
-                                
-                            ]}/>
+                                'Musician', 1000
+                            ]}
+                            wrapper="span"
+                            cursor={true}
+                            repeat={Infinity}
+                        />
                     
                     </h2>
                 </section>
                 <section className="infoblurb">
-                    <h3>I love to code. I love to learn.<br/>Working with tech is my passion.<br/>
-                        If it's yours too, I would love to be a part<br/>
-                        of your organization.
+                    <h3>I love to code. I love to learn. Working with tech is my passion.<br/>
+                        If it's yours too, I would love to be a part of your organization.
                     </h3>
                 </section>
             </section>

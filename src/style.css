@@ -269,7 +269,6 @@ iframe .asteroids {
     header .name-plate, header nav, header li {
         float: none;
         text-align: center;
-        color: red;
         width: 100%;
         padding-top: 0px;
     }
